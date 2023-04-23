@@ -1,1 +1,47 @@
-<p>user works!</p>
+<tui-input
+  tuiHintContent="Type 5 letters or more"
+  class="b-form"
+  [tuiTextfieldCleaner]="true"
+  [tuiTextfieldCustomContent]="control.valid ? success : ''"
+  [formControl]="control">
+  Логин
+</tui-input>
+<ng-template #success>
+  <tui-svg
+    src="tuiIconCheckLarge"
+    class="success tui-space_left-3">
+  </tui-svg>
+</ng-template>
+
+<tui-input-password
+  formControlName="testValue"
+  tuiTextfieldSize="m"
+  class="tui-space_top-2"
+  [tuiTextfieldLabelOutside]="true">
+  Ваш пароль
+  <input
+    tuiTextfield
+    placeholder="Введите пароль"/>
+</tui-input-password>
+
+
+
+<button
+  tuiButton
+  type="button"
+  appearance="flat"
+  class="tui-space_right-3 tui-space_bottom-3">
+  flat
+</button>
+<button
+  tuiButton
+  type="button"
+  appearance="flat"
+  class="tui-space_right-3 tui-space_bottom-3">
+  flat
+</button>
+
+
+
+
+

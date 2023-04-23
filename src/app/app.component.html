@@ -1,40 +1,52 @@
-<h1>{{title}}</h1>
+<h3>{{title}}</h3>
 
-<a routerLink="/home">
-<button
+<tui-avatar
+  new
+  text="alex inkin"
+  size="l"
+  avatarUrl="tuiIconUser"
+  class="tui-space_vertical-1"
+></tui-avatar>
+
+
+
+
+
+<a
   tuiButton
   type="button"
+  routerLink="/home"
   appearance="secondary"
   class="tui-space_right-3 tui-space_bottom-3">
   Главная
-</button></a>
+</a>
 
-<a routerLink="/addnew">
-<button
+<a
   tuiButton
   type="button"
+  routerLink="/addnew"
   appearance="secondary"
   class="tui-space_right-3 tui-space_bottom-3">
-  secondary
-</button></a>
+  Добавить
+</a>
 
-
-<a routerLink="/">
-<button
+<a
   tuiButton
   type="button"
+  routerLink="/user"
   appearance="secondary"
   class="tui-space_right-3 tui-space_bottom-3">
-  secondary
-</button></a>
+  Вход
+</a>
 
-<a routerLink="/user">
-<button
+<a
   tuiButton
   type="button"
+  routerLink="/addnew"
   appearance="secondary"
   class="tui-space_right-3 tui-space_bottom-3">
-  secondary
-</button></a>
+  Добавить
+</a>
+
 
 <router-outlet></router-outlet>
