@@ -5,7 +5,13 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import {TuiButtonModule, TuiHintModule, TuiSvgModule, TuiTextfieldControllerModule} from "@taiga-ui/core";
 import {ReactiveFormsModule} from "@angular/forms";
-import {TuiInputModule, TuiInputPasswordModule, TuiTextAreaModule} from "@taiga-ui/kit";
+import {
+  TuiDataListWrapperModule,
+  TuiFilterByInputPipeModule,
+  TuiInputModule,
+  TuiInputPasswordModule, TuiStringifyContentPipeModule,
+  TuiTextAreaModule
+} from "@taiga-ui/kit";
 
 
 @NgModule({
@@ -22,7 +28,10 @@ import {TuiInputModule, TuiInputPasswordModule, TuiTextAreaModule} from "@taiga-
     TuiInputModule,
     TuiSvgModule,
     TuiButtonModule,
-    TuiHintModule
+    TuiHintModule,
+    TuiDataListWrapperModule,
+    TuiFilterByInputPipeModule,
+    TuiStringifyContentPipeModule
   ]
 })
 export class UserModule { }
