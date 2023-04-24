@@ -1,3 +1,19 @@
+
+
+<figure>
+<div class="block">
+  content
+</div>
+
+<tui-calendar
+  [value]="value"
+  (dayClick)="onDayClick($event)">
+</tui-calendar>
+<div *ngIf="value">Chosen date: {{ value }}</div>
+
+</figure>
+<br><hr><br>
+
 <form
   class="container"
   [formGroup]="testForm"

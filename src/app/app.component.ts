@@ -13,5 +13,7 @@ import {TUI_IS_CYPRESS} from '@taiga-ui/cdk';
 
 export class AppComponent {
   title = 'planner';
-
+  avatar = 'https://ng-web-apis.github.io/dist/assets/images/web-api.svg';
 }
+
+

@@ -1,41 +1,47 @@
-<div>
+<header>
+  <tui-marker-icon src="tuiIconLinkedinLarge"></tui-marker-icon>
 
-<tui-marker-icon src="tuiIconLinkedinLarge"></tui-marker-icon>
+  <a tuiButton
+    type="button"
+    routerLink="/home"
+    appearance="secondary"
+    class="tui-space_left-7 tui-space_right-3">
+    Главная </a>
 
-<a tuiButton
-  type="button"
-  routerLink="/home"
-  appearance="secondary"
-  class="tui-space_left-7 tui-space_right-3">
-  Главная
-</a>
+  <a tuiButton
+    type="button"
+    routerLink="/addnew"
+    appearance="secondary"
+     class="tui-space_right-3">
+    Добавить </a>
 
-<a tuiButton
-  type="button"
-  routerLink="/addnew"
-  appearance="secondary"
-   class="tui-space_right-3">
-  Добавить
-</a>
+  <a tuiButton
+    type="button"
+    routerLink="/user"
+    appearance="secondary"
+     class="tui-space_right-3">
+    Вход </a>
 
-<a tuiButton
-  type="button"
-  routerLink="/user"
-  appearance="secondary"
-   class="tui-space_right-3">
-  Вход
-</a>
+  <a tuiButton
+    type="button"
+    routerLink="/addnew"
+    appearance="secondary"
+     class="tui-space_right-3">
+    Контакты </a>
 
-<a tuiButton
-  type="button"
-  routerLink="/addnew"
-  appearance="secondary"
-   class="tui-space_right-3">
-  Добавить
-</a>
 
-</div>
-<br><br>
+  <tui-avatar
+    [avatarUrl]="avatar"
+     size="l"
+     class="tui-space_right-3">
+  </tui-avatar>
+
+</header>
+
+<hr><br><br><br>
+
 <router-outlet></router-outlet>
+
+
 
 
