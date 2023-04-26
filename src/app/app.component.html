@@ -1,4 +1,5 @@
-<header>
+<tui-root>
+  <figure>
   <tui-marker-icon src="tuiIconLinkedinLarge"></tui-marker-icon>
 
   <a tuiButton
@@ -22,25 +23,50 @@
      class="tui-space_right-3">
     Вход </a>
 
-  <a tuiButton
-    type="button"
-    routerLink="/addnew"
-    appearance="secondary"
-     class="tui-space_right-3">
-    Контакты </a>
+    <tui-hosted-dropdown
+      tuiDropdownAlign="left"
+      [tuiDropdownLimitWidth]="isMobile ? 'fixed' : 'min'"
+      [tuiDropdownMaxHeight]="700"
+      [content]="content"
+      [(open)]="open">
+      <button
+        tuiButton
+        appearance="secondary"
+        type="button"
+        [iconRight]="arrow">
+        Контакты
+      </button>
+    </tui-hosted-dropdown>
 
+    <ng-template #content>
+      <tui-data-list>
+        <tui-opt-group
+          *ngFor="let group of groups">
 
+          <button
+            *ngFor="let item of group.items"
+            tuiOption
+            class="option"
+            (click)="open = false">
+            {{ item }}
+          </button>
+
+        </tui-opt-group>
+      </tui-data-list>
+    </ng-template>
+  </figure>
   <tui-avatar
     [avatarUrl]="avatar"
-     size="l"
-     class="tui-space_right-3">
+    size="l"
+    class="tui-space_right-3">
   </tui-avatar>
 
-</header>
 
-<hr><br><br><br>
+<hr><br><br>
 
 <router-outlet></router-outlet>
+
+</tui-root>
 
 
 

@@ -4,21 +4,33 @@ import { CommonModule } from '@angular/common';
 import { AddnewRoutingModule } from './addnew-routing.module';
 import { AddnewComponent } from './addnew.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import {TuiInputDateTimeModule, TuiTextAreaModule} from "@taiga-ui/kit";
-import {TuiCalendarModule} from "@taiga-ui/core";
+import {
+  TuiDataListWrapperModule,
+  TuiInputDateTimeModule,
+  TuiInputTimeModule,
+  TuiMarkerIconModule,
+  TuiTextAreaModule
+} from "@taiga-ui/kit";
+import {TuiButtonModule, TuiCalendarModule, TuiHostedDropdownModule, TuiRootModule} from "@taiga-ui/core";
 
 
 @NgModule({
   declarations: [
     AddnewComponent
   ],
-    imports: [
-        CommonModule,
-        AddnewRoutingModule,
-        ReactiveFormsModule,
-        TuiTextAreaModule,
-        TuiInputDateTimeModule,
-        TuiCalendarModule
-    ]
+  imports: [
+    CommonModule,
+    AddnewRoutingModule,
+    ReactiveFormsModule,
+    TuiTextAreaModule,
+    TuiInputDateTimeModule,
+    TuiCalendarModule,
+    TuiMarkerIconModule,
+    TuiHostedDropdownModule,
+    TuiButtonModule,
+    TuiDataListWrapperModule,
+    TuiRootModule,
+    TuiInputTimeModule
+  ]
 })
 export class AddnewModule { }

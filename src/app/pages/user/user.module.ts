@@ -3,7 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
-import {TuiButtonModule, TuiHintModule, TuiSvgModule, TuiTextfieldControllerModule} from "@taiga-ui/core";
+import {
+    TuiButtonModule,
+    TuiHintModule,
+    TuiRootModule,
+    TuiSvgModule,
+    TuiTextfieldControllerModule
+} from "@taiga-ui/core";
 import {ReactiveFormsModule} from "@angular/forms";
 import {
   TuiDataListWrapperModule,
@@ -18,20 +24,21 @@ import {
   declarations: [
     UserComponent
   ],
-  imports: [
-    CommonModule,
-    UserRoutingModule,
-    TuiTextfieldControllerModule,
-    ReactiveFormsModule,
-    TuiInputPasswordModule,
-    TuiTextAreaModule,
-    TuiInputModule,
-    TuiSvgModule,
-    TuiButtonModule,
-    TuiHintModule,
-    TuiDataListWrapperModule,
-    TuiFilterByInputPipeModule,
-    TuiStringifyContentPipeModule
-  ]
+    imports: [
+        CommonModule,
+        UserRoutingModule,
+        TuiTextfieldControllerModule,
+        ReactiveFormsModule,
+        TuiInputPasswordModule,
+        TuiTextAreaModule,
+        TuiInputModule,
+        TuiSvgModule,
+        TuiButtonModule,
+        TuiHintModule,
+        TuiDataListWrapperModule,
+        TuiFilterByInputPipeModule,
+        TuiStringifyContentPipeModule,
+        TuiRootModule
+    ]
 })
 export class UserModule { }
