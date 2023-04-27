@@ -6,7 +6,7 @@ import { CreateComponent } from './create.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {TuiDataListWrapperModule, TuiInputModule, TuiInputPhoneModule, TuiSelectModule} from "@taiga-ui/kit";
 import {TuiValidatorModule} from "@taiga-ui/cdk";
-import {TuiRootModule} from "@taiga-ui/core";
+import {TuiButtonModule, TuiRootModule} from "@taiga-ui/core";
 
 
 @NgModule({
@@ -23,7 +23,8 @@ import {TuiRootModule} from "@taiga-ui/core";
         TuiSelectModule,
         FormsModule,
         TuiValidatorModule,
-        TuiRootModule
+        TuiRootModule,
+        TuiButtonModule
     ]
 })
 export class CreateModule { }

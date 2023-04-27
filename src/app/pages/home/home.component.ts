@@ -1,14 +1,23 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {tuiCreateDefaultDayRangePeriods} from '@taiga-ui/kit';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.less'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent {
-  items = tuiCreateDefaultDayRangePeriods();
 
-}
+export class HomeComponent {}
+
+
+
+
+
+
+
+
+
+
+
 
