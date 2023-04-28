@@ -35,7 +35,7 @@ export class Home2Component {
   get text(): string {
     switch (this.length) {
       case 0:
-        return 'Время';
+        return 'Длительность';
       case 1:
         return this.value[0];
       default:

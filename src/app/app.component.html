@@ -1,37 +1,44 @@
 <tui-root>
-  <figure>
+  <br>
   <tui-marker-icon src="tuiIconFeatherLarge"></tui-marker-icon>
-
-  <tui-avatar
+    <tui-avatar
       [avatarUrl]="avatar"
       size="l"
-      class="tui-space_right-0">
+      class="tui-space_right-4">
   </tui-avatar>
-  <br><br><hr><br>
 
+      <br><br>
+
+<div class="button">
   <a tuiButton
     type="button"
+    size="m"
     routerLink="/home"
-    appearance="outline"
-    class="tui-space_left-0 tui-space_right-3">
+    appearance="whiteblock-active"
+    class="tui-space_right-3">
     Главная </a>
 
   <a tuiButton
     type="button"
+    size="m"
     routerLink="/addnew"
-    appearance="outline"
-     class="tui-space_right-3">
+    appearance="whiteblock-active"
+    class="tui-space_right-0">
     Добавить </a>
 
   <a tuiButton
     type="button"
+    size="m"
     routerLink="/user"
-    appearance="outline"
-     class="tui-space_right-3">
+    appearance="whiteblock-active"
+     class="tui-space_left-3">
     Вход </a>
-  </figure>
+</div>
+  <br><hr><br><br><br><br><br>
+
+
 </tui-root>
-  <hr><br><br>
+
 <router-outlet></router-outlet>
 
 
