@@ -1,0 +1,57 @@
+<figure>
+    <div class="button">
+      <!--КНОПКА-->
+      <a tuiButton
+         type="button"
+         routerLink="/home1"
+         appearance="secondary"
+         icon="tuiIconArrowLeftLarge"
+         class="tui-space_right-3">
+        Назад </a>
+
+      <!--КНОПКА-->
+      <a tuiButton
+         type="button"
+         routerLink="/home"
+         appearance="secondary"
+         iconRight="tuiIconArrowRightLarge"
+         class="tui-space_left-3">
+        Далее </a>
+    </div>
+<br>
+
+
+
+<form [formGroup]="form">
+  <tui-hosted-dropdown
+    [content]="dropdown"
+    [(open)]="open">
+    <button
+      tuiButton
+      type="button"
+      [appearance]="appearance"
+      [iconRight]="length ? cleaner : arrow"
+      [style.--tui-padding.rem]="1.25"
+      (keydown.delete)="form.reset()">
+      {{ text }}
+    </button>
+    <ng-template #dropdown>
+      <tui-data-list-wrapper
+        tuiMultiSelectGroup
+        formControlName="control"
+        [items]="items">
+      </tui-data-list-wrapper>
+    </ng-template>
+    <ng-template #cleaner>
+      <button
+        tuiIconButton
+        appearance="icon"
+        size="xs"
+        icon="tuiIconCloseLarge"
+        type="reset"
+        tuiPreventDefault="mousedown"
+      ></button>
+    </ng-template>
+  </tui-hosted-dropdown>
+</form>
+</figure>

@@ -12,13 +12,13 @@ export class Home1Component {
     Validators.required,
     Validators.minLength(5),
   ]);
-
   readonly testForm = new FormGroup({
     testValue: new FormControl('orange'),
   });
   readonly fruits = ['apple', 'orange', 'pineapple'];
-
+  onClick(event: MouseEvent): void {
+    console.info('click', event);
+  }
 
 
 }
-

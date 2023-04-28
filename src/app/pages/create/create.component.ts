@@ -4,7 +4,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-create',
   templateUrl: './create.component.html',
-  styleUrls: ['./create.component.css'],
+  styleUrls: ['./create.component.less'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CreateComponent {

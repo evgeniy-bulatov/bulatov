@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {ReactiveFormsModule} from '@angular/forms';
-import {TuiInputModule, TuiRadioBlockModule} from '@taiga-ui/kit';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {
+  TuiCheckboxLabeledModule, TuiElasticContainerModule,
+  TuiInputModule,
+  TuiIslandModule,
+  TuiRadioBlockModule,
+  TuiTextAreaModule
+} from '@taiga-ui/kit';
 import { Home1RoutingModule } from './home1-routing.module';
 import { Home1Component } from './home1.component';
 import {
   TuiButtonModule,
   TuiGroupModule,
-  TuiHintModule,
+  TuiHintModule, TuiLinkModule, TuiRootModule,
   TuiSvgModule,
   TuiTextfieldControllerModule
 } from "@taiga-ui/core";
@@ -28,6 +34,13 @@ import {
     TuiSvgModule,
     TuiRadioBlockModule,
     TuiGroupModule,
+    TuiTextAreaModule,
+    TuiIslandModule,
+    TuiCheckboxLabeledModule,
+    FormsModule,
+    TuiElasticContainerModule,
+    TuiRootModule,
+    TuiLinkModule,
   ]
 })
 export class Home1Module { }
