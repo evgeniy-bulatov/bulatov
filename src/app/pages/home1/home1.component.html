@@ -34,9 +34,45 @@
         class="success tui-space_left-3">
       </tui-svg>
     </ng-template>
+
+
+    <h3 class="title">Horizontal group</h3>
+
+    <form
+      class="group"
+      [formGroup]="testForm">
+      <div
+        tuiGroup
+        class="group"
+        [collapsed]="true">
+        <tui-radio-block
+          contentAlign="right"
+          formControlName="testValue"
+          item="orange"
+          size="l">
+          Zoom
+        </tui-radio-block>
+        <tui-radio-block
+          contentAlign="right"
+          formControlName="testValue"
+          item="apple"
+          size="l">
+          Skype
+        </tui-radio-block>
+        <tui-radio-block
+          contentAlign="right"
+          formControlName="testValue"
+          item="pineapple"
+          size="l">
+          Audio
+        </tui-radio-block>
+      </div>
+    </form>
+
   </div>
 
   <div>
+
 
 
 

@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
-import {TuiInputModule} from '@taiga-ui/kit';
+import {TuiInputModule, TuiRadioBlockModule} from '@taiga-ui/kit';
 import { Home1RoutingModule } from './home1-routing.module';
 import { Home1Component } from './home1.component';
-import {TuiButtonModule, TuiHintModule, TuiSvgModule, TuiTextfieldControllerModule} from "@taiga-ui/core";
+import {
+  TuiButtonModule,
+  TuiGroupModule,
+  TuiHintModule,
+  TuiSvgModule,
+  TuiTextfieldControllerModule
+} from "@taiga-ui/core";
 
 
 @NgModule({
@@ -20,6 +26,8 @@ import {TuiButtonModule, TuiHintModule, TuiSvgModule, TuiTextfieldControllerModu
     TuiTextfieldControllerModule,
     TuiHintModule,
     TuiSvgModule,
+    TuiRadioBlockModule,
+    TuiGroupModule,
   ]
 })
 export class Home1Module { }

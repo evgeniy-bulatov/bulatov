@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-home1',
@@ -12,6 +12,12 @@ export class Home1Component {
     Validators.required,
     Validators.minLength(5),
   ]);
+
+  readonly testForm = new FormGroup({
+    testValue: new FormControl('orange'),
+  });
+  readonly fruits = ['apple', 'orange', 'pineapple'];
+
 
 
 }
