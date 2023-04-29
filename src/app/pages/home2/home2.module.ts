@@ -7,12 +7,12 @@ import { Home2Component } from './home2.component';
 import {
   TuiButtonModule, TuiDropdownModule,
   TuiHintModule,
-  TuiHostedDropdownModule,
+  TuiHostedDropdownModule, TuiRootModule,
   TuiSvgModule,
   TuiTextfieldControllerModule
 } from "@taiga-ui/core";
 import {ReactiveFormsModule} from "@angular/forms";
-import {TuiDataListWrapperModule, TuiMultiSelectModule} from "@taiga-ui/kit";
+import {TuiDataListWrapperModule, TuiMultiSelectModule, TuiSelectModule} from "@taiga-ui/kit";
 import {TuiPreventDefaultModule} from "@taiga-ui/cdk";
 
 
@@ -35,6 +35,8 @@ import {TuiPreventDefaultModule} from "@taiga-ui/cdk";
     TuiMultiSelectModule,
     TuiPreventDefaultModule,
     TuiDropdownModule,
+    TuiSelectModule,
+    TuiRootModule,
   ]
 })
 export class Home2Module { }

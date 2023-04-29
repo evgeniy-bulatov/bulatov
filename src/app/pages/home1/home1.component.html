@@ -1,3 +1,4 @@
+<tui-root>
 
 <figure>
   <div class="button">
@@ -20,8 +21,10 @@
     Далее </a>
   </div>
 <br>
-  <div class="form">
+
+
 <!--НАЗВАНИЕ-->
+  <div class="form">
     <tui-input
       tuiHintContent="Название"
       class="b-form"
@@ -37,6 +40,7 @@
       </tui-svg>
     </ng-template>
 <br>
+
 <!--ZOOM SKYPE AUDIO-->
     <form
       class="group"
@@ -70,14 +74,25 @@
     </form>
   </div>
 <br>
-  <tui-elastic-container class="container">
-    <div
-      tuiHintContent="Описание"
-      contenteditable
-      class="editable">
-      Описание
-    </div>
-  </tui-elastic-container>
+<!--поле для описания-->
+  <tui-input
+    tuiHintContent="Описание встречи"
+    class="b-form"
+    [tuiTextfieldCleaner]="true"
+    [tuiTextfieldCustomContent]="control.valid ? success : ''">
+    Описание
+  </tui-input>
+  <br>
+
+<!--  поле для ссылки-->
+  <tui-input
+    tuiHintContent="Ссылка на встречу"
+    class="b-form"
+    [tuiTextfieldCleaner]="true"
+    [tuiTextfieldCustomContent]="control.valid ? success : ''">
+    Ссылка
+  </tui-input>
+
 </figure>
 
-
+</tui-root>

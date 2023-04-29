@@ -1,3 +1,4 @@
+<tui-root>
 <figure>
     <div class="button">
       <!--КНОПКА-->
@@ -21,37 +22,19 @@
 <br>
 
 
-
-<form [formGroup]="form">
-  <tui-hosted-dropdown
-    [content]="dropdown"
-    [(open)]="open">
-    <button
-      tuiButton
-      type="button"
-      [appearance]="appearance"
-      [iconRight]="length ? cleaner : arrow"
-      [style.--tui-padding.rem]="1.25"
-      (keydown.delete)="form.reset()">
-      {{ text }}
-    </button>
-    <ng-template #dropdown>
+  <form class="b-form">
+    <tui-select [formControl]="testValue">
+      Длительность встречи
+      <input
+        tuiTextfield
+        placeholder="Сколько времени будет длиться встреча"/>
       <tui-data-list-wrapper
-        tuiMultiSelectGroup
-        formControlName="control"
+        *tuiDataList
         [items]="items">
       </tui-data-list-wrapper>
-    </ng-template>
-    <ng-template #cleaner>
-      <button
-        tuiIconButton
-        appearance="icon"
-        size="xs"
-        icon="tuiIconCloseLarge"
-        type="reset"
-        tuiPreventDefault="mousedown"
-      ></button>
-    </ng-template>
-  </tui-hosted-dropdown>
-</form>
+    </tui-select>
+  </form>
+
+
 </figure>
+</tui-root>
