@@ -24,7 +24,7 @@
 
 
 <!--НАЗВАНИЕ-->
-  <div class="form">
+  <div class="block">
     <tui-input
       tuiHintContent="Название"
       class="b-form"
@@ -39,6 +39,7 @@
         class="success tui-space_left-3">
       </tui-svg>
     </ng-template>
+
 <br>
 
 <!--ZOOM SKYPE AUDIO-->
@@ -72,27 +73,24 @@
         </tui-radio-block>
       </div>
     </form>
-  </div>
 <br>
 <!--поле для описания-->
-  <tui-input
-    tuiHintContent="Описание встречи"
-    class="b-form"
-    [tuiTextfieldCleaner]="true"
-    [tuiTextfieldCustomContent]="control.valid ? success : ''">
-    Описание
-  </tui-input>
-  <br>
+    <tui-input
+      tuiHintContent="Описание встречи"
+      class="b-form"
+      [tuiTextfieldCleaner]="true">
+      Описание
+    </tui-input>
+    <br>
 
-<!--  поле для ссылки-->
-  <tui-input
-    tuiHintContent="Ссылка на встречу"
-    class="b-form"
-    [tuiTextfieldCleaner]="true"
-    [tuiTextfieldCustomContent]="control.valid ? success : ''">
-    Ссылка
-  </tui-input>
-
+  <!--  поле для ссылки-->
+    <tui-input
+      tuiHintContent="Ссылка на встречу"
+      class="b-form"
+      [tuiTextfieldCleaner]="true">
+      Ссылка
+    </tui-input>
+  </div>
 </figure>
 
 </tui-root>

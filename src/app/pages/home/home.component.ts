@@ -8,7 +8,21 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
-export class HomeComponent {}
+export class HomeComponent {
+  breakpoints = [
+    'tui-mobile',
+    'tui-mobile-min',
+    'tui-mobile-interval',
+    'tui-tablet',
+    'tui-tablet-min',
+    'tui-tablet-interval',
+    'tui-desktop',
+    'tui-desktop-min',
+    'tui-desktop-interval',
+    'tui-desktop-lg-min',
+    '1234567',
+  ] as const;
+}
 
 
 

@@ -9,10 +9,10 @@ import {TUI_ARROW} from '@taiga-ui/kit';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home2Component {
+  itemControl = new FormControl();
+  itemBeforeControl = new FormControl();
+  itemAfterControl = new FormControl();
   items = [
-    '15 минут',
-    '30 минут',
-    '45 минут',
     '1 час 00 минут',
     '1 час 15 минут',
     '1 час 45 минут',
@@ -22,6 +22,24 @@ export class Home2Component {
     '2 час 45 минут',
     '3 час 00 минут',
   ];
+  beforeItems = [
+    '5 минут',
+    '10 минут',
+    '15 минут',
+    '20 минут',
+    '25 минут',
+    '30 минут',
+  ];
+
+  afterItems = [
+    '5 минут',
+    '10 минут',
+    '15 минут',
+    '20 минут',
+    '25 минут',
+    '30 минут',
+  ];
+
 
   testValue = new FormControl();
 }

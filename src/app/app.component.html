@@ -1,49 +1,42 @@
 <tui-root>
+  <h1 >SOLO-IT</h1>
+<!--  <tui-avatar-->
+<!--    class="tui-space_top-0"-->
+<!--    [avatarUrl]="avatar">-->
+<!--  </tui-avatar>-->
 
-  <tui-marker-icon src="tuiIconFeatherLarge"></tui-marker-icon>
-    <tui-avatar
-      [avatarUrl]="avatar"
-      size="l"
-      class="tui-space_right-4">
-  </tui-avatar>
+  <div class="button">
 
+  <!--  кн.ГЛАВНАЯ-->
+    <a tuiButton
+      type="button"
+      size="m"
+      routerLink="/home"
+      text="tui-text_h2"
+      appearance="whiteblock-active"
+      class="tui-space_right-3">
+      Главная </a>
 
+  <!--  кн.ДОБАВИТЬ-->
+    <a tuiButton
+      type="button"
+      size="m"
+      routerLink="/addnew"
+      appearance="whiteblock-active"
+      class="tui-space_right-0">
+      Добавить </a>
 
-<div class="button">
-  <a tuiButton
-    type="button"
-    size="m"
-    routerLink="/home"
-    appearance="whiteblock-active"
-    class="tui-space_right-3">
-    Главная </a>
-
-  <a tuiButton
-    type="button"
-    size="m"
-    routerLink="/addnew"
-    appearance="whiteblock-active"
-    class="tui-space_right-0">
-    Добавить </a>
-
-  <a tuiButton
-    type="button"
-    size="m"
-    routerLink="/user"
-    appearance="whiteblock-active"
-     class="tui-space_left-3">
-    Вход </a>
-  <br><hr>
-</div>
+  <!--  кн.ВХОД-->
+    <a tuiButton
+      type="button"
+      size="m"
+      routerLink="/user"
+      appearance="whiteblock-active"
+       class="tui-space_left-3">
+      Вход </a>
+  </div>
 </tui-root>
-
-
-
-
-
-
-
-
+<br><hr>
 <router-outlet></router-outlet>
 
 
