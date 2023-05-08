@@ -19,19 +19,28 @@ export class Home3Component {
     testValue1: new FormControl(false),
     testValue2: new FormControl(false),
     testValue3: new FormControl(false),
-    testValue4: new FormControl(false),
-    testValue5: new FormControl(false),
-    testValue6: new FormControl(false),
-    testValue7: new FormControl(false),
   });
-
-
-readonly test1Form = new FormGroup({
-  testValue: new FormControl(null),
-});
-
-items1 = tuiCreateTimePeriods();
-items2 = tuiCreateTimePeriods(10, 20, [0, 15, 30, 45]);
+  readonly test1Form = new FormGroup({
+    testValue1: new FormControl(new TuiTime(8, 0)),
+    testValue2: new FormControl(new TuiTime(8, 0)),
+    testValue3: new FormControl(new TuiTime(8, 0)),
+    testValue4: new FormControl(new TuiTime(8, 0)),
+  });
+  readonly items = tuiCreateTimePeriods(8, 17, [0, 30]);
 }
+
+
+
+
+
+
+// readonly test1Form = new FormGroup({
+//   testValue: new FormControl(null),
+// });
+//
+// items1 = tuiCreateTimePeriods();
+// items2 = tuiCreateTimePeriods(10, 20, [0, 15, 30, 45]);
+
+
 
 

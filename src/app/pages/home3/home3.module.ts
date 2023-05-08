@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 import { Home3RoutingModule } from './home3-routing.module';
 import { Home3Component } from './home3.component';
 import {
-  TuiCheckboxBlockModule,
-  TuiCheckboxModule,
-  TuiDataListWrapperModule, TuiElasticContainerModule, TuiInputModule,
-  TuiInputTimeModule,
-  TuiSelectModule
+    TuiCheckboxBlockModule, TuiCheckboxLabeledModule,
+    TuiCheckboxModule,
+    TuiDataListWrapperModule, TuiElasticContainerModule, TuiInputModule,
+    TuiInputTimeModule,
+    TuiSelectModule
 } from "@taiga-ui/kit";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {
@@ -43,7 +43,8 @@ import {TuiRepeatTimesModule} from "@taiga-ui/cdk";
         TuiInputModule,
         FormsModule,
         TuiRepeatTimesModule,
-        TuiTooltipModule
+        TuiTooltipModule,
+        TuiCheckboxLabeledModule
     ]
 })
 export class Home3Module { }

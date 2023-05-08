@@ -1,42 +1,29 @@
 <tui-root>
 
+  <div class="wrapper">
+    <tui-notification>
+      A short simple informative message. It can be&nbsp;multiline&nbsp;if&nbsp;you&nbsp;need it
+    </tui-notification>
+    <tui-notification
+      status="success"
+      class="tui-space_top-4"
+    >
+      A short simple informative message. It can be&nbsp;multiline&nbsp;if&nbsp;you&nbsp;need it
+    </tui-notification>
+    <tui-notification
+      status="error"
+      class="tui-space_top-4"
+    >
+      A short simple informative message. It can be&nbsp;multiline&nbsp;if&nbsp;you&nbsp;need it
+    </tui-notification>
+    <tui-notification
+      status="warning"
+      class="tui-space_top-4"
+    >
+      A short simple informative message. It can be&nbsp;multiline&nbsp;if&nbsp;you&nbsp;need it
+    </tui-notification>
+  </div>
 
-    <!--КНОПКА-->
-<!--    <a tuiButton-->
-<!--      type="button"-->
-<!--      size="m"-->
-<!--      routerLink="/home1"-->
-<!--      appearance="primary"-->
-<!--      icon="tuiIconPlusLarge"-->
-<!--      class="tui-space_right-30">-->
-<!--      Новое </a>-->
-
-  <figure>
-  <button tuiAction
-    type="button">
-    <section>
-      <h2 class="header tui-text_h6">Название встречи</h2>
-      <h3 class="description tui-text_body-s">
-        Описание события Описание события Описание события Описание события Описание события
-      </h3>
-      <p class="description tui-text_body-s">
-        Участник Участник Участник Участник Участник
-      </p>
-    </section>
-  </button>
-
-  <button tuiAction
-    type="button">
-    <section>
-      <h3 class="header tui-text_h6">Название встречи</h3>
-      <p class="description tui-text_body-s">
-        Описание события Описание события Описание события Описание события Описание события
-      </p>
-      <p class="description tui-text_body-s">
-        Участник Участник Участник Участник Участник
-      </p>
-    </section>
-  </button>
 
   <button tuiAction
     type="button">
@@ -51,24 +38,6 @@
     </section>
   </button>
 
-</figure>
 
-
-<!--  <div *tuiRepeatTimes="let index of content">-->
-<!--    <button-->
-<!--      tuiButton-->
-<!--      size="s"-->
-<!--      appearance="icon"-->
-<!--      icon="tuiIconPlusLarge"-->
-<!--      (click)="add()">-->
-<!--    </button>-->
-<!--    <button-->
-<!--      tuiButton-->
-<!--      size="s"-->
-<!--      appearance="icon"-->
-<!--      icon="tuiIconTrash"-->
-<!--      (click)="remove()">-->
-<!--    </button>-->
-<!--  </div>-->
 </tui-root>
 

@@ -31,44 +31,8 @@
     </tui-hosted-dropdown>
 
 
-<!--    загрузка фото-->
     <ng-template #content>
       <tui-data-list >
-<!--        <tui-input-files-->
-<!--          *ngIf="!control.value"-->
-<!--          accept="image/*"-->
-<!--          [formControl]="control"-->
-<!--          (reject)="onReject($event)">-->
-<!--        </tui-input-files>-->
-
-<!--        <tui-input-files-->
-<!--          accept="image/*"-->
-<!--          [multiple]="true"-->
-<!--          [formControl]="control"-->
-<!--          (reject)="onReject($event)"-->
-<!--          (ngModelChange)="control.markAsTouched()">-->
-<!--        </tui-input-files>-->
-
-<!--        <tui-files class="tui-space_top-1">-->
-<!--          <tui-file *ngFor="let file of control.valueChanges | async"-->
-<!--            [file]="file"-->
-<!--            [showDelete]="control.enabled"-->
-<!--            (removed)="removeFile(file)">-->
-<!--          </tui-file>-->
-
-<!--          <tui-file-->
-<!--            *ngFor="let file of rejectedFiles"-->
-<!--            state="error"-->
-<!--            [file]="file"-->
-<!--            [showDelete]="control.enabled"-->
-<!--            (removed)="clearRejected(file)">-->
-<!--          </tui-file>-->
-<!--        </tui-files>-->
-
-<!--        <tui-error-->
-<!--          [formControl]="control"-->
-<!--          [error]="['maxLength'] | tuiFieldError | async">-->
-<!--        </tui-error>-->
 
 
         <a tuiButton
@@ -85,7 +49,7 @@
            routerLink="/rotes"
            text="tui-text_h2"
            appearance="primary">
-           Тарифы</a>
+          Тарифы</a>
 <br>
         <a tuiButton
            type="button"
