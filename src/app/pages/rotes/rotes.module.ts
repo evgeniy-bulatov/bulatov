@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { RotesRoutingModule } from './rotes-routing.module';
 import { RotesComponent } from './rotes.component';
+import {TuiButtonModule, TuiRootModule} from "@taiga-ui/core";
+import {TuiActionModule} from "@taiga-ui/kit";
 
 
 @NgModule({
@@ -11,7 +13,10 @@ import { RotesComponent } from './rotes.component';
   ],
   imports: [
     CommonModule,
-    RotesRoutingModule
+    RotesRoutingModule,
+    TuiRootModule,
+    TuiButtonModule,
+    TuiActionModule
   ]
 })
 export class RotesModule { }

@@ -1,1 +1,80 @@
-<p>rotes works!</p>
+<tui-root>
+<figure>
+  <div class="button">
+  <button
+    tuiButton
+    size="m"
+    type="button"
+    appearance="custom"
+    (click)="onClick(content, header, 'm')">
+    Base
+  </button>
+
+  <button
+    tuiButton
+    size="m"
+    type="button"
+    appearance="custom"
+    (click)="on1Click(content, header, 'm')">
+    Middle
+  </button>
+
+  <button
+    tuiButton
+    size="m"
+    type="button"
+    appearance="custom"
+    (click)="on2Click(content, header, 'm')">
+    Professional
+  </button>
+
+    <button tuiAction
+      type="button">
+        <ol>
+          <li>Опция 1</li>
+          <li>Опция 2</li>
+          <li>Опция 3</li>
+        </ol>
+    </button>
+    <button tuiAction
+      type="button">
+        <ol>
+          <li>Опция 1</li>
+          <li>Опция 2</li>
+          <li>Опция 3</li>
+          <li>Опция 4</li>
+        </ol>
+    </button>
+    <button tuiAction
+      type="button">
+        <ol>
+          <li>Опция 1</li>
+          <li>Опция 2</li>
+          <li>Опция 3</li>
+          <li>Опция 4</li>
+          <li>Опция 5</li>
+          <li>Опция 6</li>
+        </ol>
+    </button>
+  </div>
+</figure>
+
+  <ng-template
+    #content
+    let-observer>
+    <div class="buttons">
+      <button
+        tuiButton
+        size="m"
+        type="button"
+        (click)="observer.complete()">
+         Да
+      </button>
+    </div>
+  </ng-template>
+  <ng-template #header>
+    <div class="header">
+      Выбрать тариф
+    </div>
+  </ng-template>
+</tui-root>
