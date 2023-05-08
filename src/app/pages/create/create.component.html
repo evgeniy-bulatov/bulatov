@@ -1,55 +1,81 @@
 <tui-root>
-<figure>
-<form
-  class="b-form"
-  [formGroup]="group">
-  <tui-input formControlName="name">Name</tui-input>
+  <figure>
+    <form
+      class="b-form"
+      [formGroup]="group">
+      <tui-input formControlName="name"
+        class="tui-space_top-2">
+        Имя</tui-input>
 
-  <tui-select
-    class="tui-space_vertical-3"
-    [ngModelOptions]="{'standalone': true}"
-    [(ngModel)]="type">
-    Connection
-    <tui-data-list-wrapper
-      *tuiDataList
-      [items]="items">
-    </tui-data-list-wrapper>
-  </tui-select>
+      <tui-input formControlName="name"
+        class="tui-space_top-2">
+        Фамилия</tui-input>
 
-  <tui-input
-    *ngIf="type === items[0]; else phone"
-    [tuiValidator]="validator"
-    formControlName="contact">
-    Contact
-  </tui-input>
-  <ng-template #phone>
-    <tui-input-phone formControlName="contact">Contact</tui-input-phone>
-  </ng-template>
-</form>
-  <br>
-  <div class="button">
-  <a tuiButton
-    type="button"
-    routerLink="/user"
-    appearance="whiteblock-active"
-    icon="tuiIconArrowLeftLarge"
-    class="tui-space_right-3">
-    Назад
-  </a>
+      <tui-select
+        class="tui-space_vertical-2"
+        [ngModelOptions]="{'standalone': true}"
+        [(ngModel)]="type">
+        Выберите
+        <tui-data-list-wrapper
+        *tuiDataList
+        [items]="items">
+        </tui-data-list-wrapper>
+      </tui-select>
 
-  <button
-    tuiButton
-    type="button"
-    appearance="whiteblock-active"
-    iconRight="tuiIconShareLarge"
-    class="tui-space_left-3">
-    Готово
-  </button>
-  </div>
-</figure>
+      <tui-input
+        *ngIf="type === items[0]; else phone"
+        [tuiValidator]="validator"
+        formControlName="contact"
+        class="tui-space_top-2">
+        Введите ваш email
+      </tui-input>
+      <ng-template #phone>
+        <tui-input-phone formControlName="contact">
+        Введите номер телефона</tui-input-phone>
+      </ng-template>
 
+      <tui-input-password
+        formControlName="testValue"
+        class="tui-space_top-2">
+        Пароль
+        <input tuiTextfield
+        placeholder="Make it secure!"/>
+      </tui-input-password>
 
+      <tui-input-password
+        formControlName="testValue"
+        class="tui-space_top-2">
+        Повторите пароль
+        <input tuiTextfield
+        placeholder="Make it secure!"/>
+      </tui-input-password>
+    </form>
 
+    <br>
+
+<!--КНОПКИ-->
+
+    <div class="button">
+      <a tuiButton
+        type="button"
+        size="m"
+        routerLink="/user"
+        appearance="primary"
+        icon="tuiIconChevronLeftLarge"
+        class="tui-space_right-2">
+        Назад
+      </a>
+      <a tuiButton
+        type="button"
+        size="m"
+        routerLink="/user"
+        appearance="primary"
+        iconRight="tuiIconCheckLarge"
+        class="tui-space_left-2">
+        Готово
+      </a>
+    </div>
+  </figure>
 </tui-root>
 
 

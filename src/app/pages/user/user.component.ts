@@ -14,11 +14,6 @@ export class UserComponent {
     ])
   readonly items = [
     {name: 'John', surname: 'Cleese'},
-    {name: 'Eric', surname: 'Idle'},
-    {name: 'Graham', surname: 'Chapman'},
-    {name: 'Michael', surname: 'Palin'},
-    {name: 'Terry', surname: 'Gilliam'},
-    {name: 'Terry', surname: 'Jones'},
   ];
 
   readonly stringify = (item: {name: string; surname: string}): string =>

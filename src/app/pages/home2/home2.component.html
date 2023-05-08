@@ -1,32 +1,10 @@
 <tui-root>
 <figure>
-    <div class="button">
-<!--КНОПКА ДАЛЕЕ-->
-      <a tuiButton
-         type="button"
-         routerLink="/home1"
-         appearance="whiteblock-active"
-         icon="tuiIconArrowLeftLarge"
-         class="tui-space_right-3">
-        Назад </a>
-
-<!--КНОПКА НАЗАД-->
-      <a tuiButton
-         type="button"
-         routerLink="/home3"
-         appearance="whiteblock-active"
-         iconRight="tuiIconArrowRightLarge"
-         class="tui-space_left-3">
-        Далее </a>
-    </div>
-<br>
-
 <div class="block">
   <form class="b-form">
     <tui-select [formControl]="itemControl">
       Длительность встречи
-      <input
-        tuiTextfield
+      <input tuiTextfield
         placeholder="Сколько времени будет длиться встреча"/>
       <tui-data-list-wrapper
         *tuiDataList
@@ -38,8 +16,7 @@
   <form class="b-form">
     <tui-select [formControl]="itemBeforeControl">
       Добавить время перед встречей
-      <input
-        tuiTextfield
+      <input tuiTextfield
         placeholder="Время для подготовки/отдыха"/>
       <tui-data-list-wrapper
         *tuiDataList
@@ -51,8 +28,7 @@
   <form class="b-form">
     <tui-select [formControl]="itemAfterControl">
       Добавить время после встречи
-      <input
-        tuiTextfield
+      <input tuiTextfield
         placeholder="Время для подготовки/отдыха"/>
       <tui-data-list-wrapper
         *tuiDataList
@@ -61,5 +37,30 @@
     </tui-select>
   </form>
 </div>
+
+  <br>
+
+  <div class="button">
+    <!--КНОПКА ДАЛЕЕ-->
+    <a tuiButton
+       type="button"
+       size="m"
+       routerLink="/home1"
+       appearance="primary"
+       icon="tuiIconArrowLeftLarge"
+       class="tui-space_right-3">
+      Назад </a>
+
+    <!--КНОПКА НАЗАД-->
+    <a tuiButton
+       type="button"
+       size="m"
+       routerLink="/home3"
+       appearance="primary"
+       iconRight="tuiIconArrowRightLarge"
+       class="tui-space_left-3">
+      Далее </a>
+  </div>
+
 </figure>
 </tui-root>

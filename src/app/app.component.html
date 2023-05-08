@@ -1,42 +1,119 @@
 <tui-root>
-  <h1 >SOLO-IT</h1>
-<!--  <tui-avatar-->
-<!--    class="tui-space_top-0"-->
-<!--    [avatarUrl]="avatar">-->
-<!--  </tui-avatar>-->
-
-  <div class="button">
-
-  <!--  кн.ГЛАВНАЯ-->
+  <form>
+    <!--  кн.ГЛАВНАЯ-->
     <a tuiButton
-      type="button"
-      size="m"
-      routerLink="/home"
-      text="tui-text_h2"
-      appearance="whiteblock-active"
-      class="tui-space_right-3">
-      Главная </a>
-
-  <!--  кн.ДОБАВИТЬ-->
+       type="button"
+       size="s"
+       routerLink="/home"
+       text="tui-text_h2"
+       appearance="primary"
+       class="tui-space_right-3">
+       Главная </a>
+    <!--  кн.ДОБАВИТЬ-->
     <a tuiButton
-      type="button"
-      size="m"
-      routerLink="/addnew"
-      appearance="whiteblock-active"
-      class="tui-space_right-0">
-      Добавить </a>
+       type="button"
+       size="s"
+       routerLink="/home1"
+       appearance="primary"
+       class="tui-space_right-3">
+       Добавить </a>
 
-  <!--  кн.ВХОД-->
-    <a tuiButton
-      type="button"
-      size="m"
-      routerLink="/user"
-      appearance="whiteblock-active"
-       class="tui-space_left-3">
-      Вход </a>
-  </div>
+    <tui-hosted-dropdown [content]="content">
+      <button
+        tuiButton
+        type="button"
+        size="s"
+        appearance="primary"
+        class="tui-space_right-3"
+        [iconRight]="arrow">
+        Профиль
+      </button>
+    </tui-hosted-dropdown>
+
+
+<!--    загрузка фото-->
+    <ng-template #content>
+      <tui-data-list >
+<!--        <tui-input-files-->
+<!--          *ngIf="!control.value"-->
+<!--          accept="image/*"-->
+<!--          [formControl]="control"-->
+<!--          (reject)="onReject($event)">-->
+<!--        </tui-input-files>-->
+
+<!--        <tui-input-files-->
+<!--          accept="image/*"-->
+<!--          [multiple]="true"-->
+<!--          [formControl]="control"-->
+<!--          (reject)="onReject($event)"-->
+<!--          (ngModelChange)="control.markAsTouched()">-->
+<!--        </tui-input-files>-->
+
+<!--        <tui-files class="tui-space_top-1">-->
+<!--          <tui-file *ngFor="let file of control.valueChanges | async"-->
+<!--            [file]="file"-->
+<!--            [showDelete]="control.enabled"-->
+<!--            (removed)="removeFile(file)">-->
+<!--          </tui-file>-->
+
+<!--          <tui-file-->
+<!--            *ngFor="let file of rejectedFiles"-->
+<!--            state="error"-->
+<!--            [file]="file"-->
+<!--            [showDelete]="control.enabled"-->
+<!--            (removed)="clearRejected(file)">-->
+<!--          </tui-file>-->
+<!--        </tui-files>-->
+
+<!--        <tui-error-->
+<!--          [formControl]="control"-->
+<!--          [error]="['maxLength'] | tuiFieldError | async">-->
+<!--        </tui-error>-->
+
+
+        <a tuiButton
+           type="button"
+           size="s"
+           routerLink="/rename"
+           text="tui-text_h2"
+           appearance="primary">
+          Профиль</a>
+<br>
+        <a tuiButton
+           type="button"
+           size="s"
+           routerLink="/rename"
+           text="tui-text_h2"
+           appearance="primary">
+           Тарифы</a>
+<br>
+        <a tuiButton
+           type="button"
+           size="s"
+           routerLink="/user"
+           text="tui-text_h2"
+           appearance="primary">
+           Выйти</a>
+      </tui-data-list>
+    </ng-template>
+
+
+
+
+    <!--АВАТАР-->
+    <tui-avatar
+      class="tui-space_top-0"
+      [avatarUrl]="avatar">
+    </tui-avatar>
+  </form>
 </tui-root>
-<br><hr>
+
+
+
+
+
+
+
 <router-outlet></router-outlet>
 
 

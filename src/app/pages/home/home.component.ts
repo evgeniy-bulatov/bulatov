@@ -1,4 +1,5 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Inject} from '@angular/core';
+import {TuiAlertService} from '@taiga-ui/core';
 
 
 @Component({
@@ -9,22 +10,16 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
 })
 
 export class HomeComponent {
-  breakpoints = [
-    'tui-mobile',
-    'tui-mobile-min',
-    'tui-mobile-interval',
-    'tui-tablet',
-    'tui-tablet-min',
-    'tui-tablet-interval',
-    'tui-desktop',
-    'tui-desktop-min',
-    'tui-desktop-interval',
-    'tui-desktop-lg-min',
-    '1234567',
-  ] as const;
+
+  constructor(
+    @Inject(TuiAlertService)
+    private readonly alerts: TuiAlertService,
+  ) {}
+
+  onClick(result: string): void {
+    this.alerts.open(result).subscribe();
+  }
 }
-
-
 
 
 

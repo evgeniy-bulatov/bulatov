@@ -1,24 +1,28 @@
-*{
-  margin-top: 1em;
-  margin-bottom: 4em;
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 7rem;
+  @media @tui-desktop-min {}
 }
-h1{
-  text-align: center;
-  font-size: 50px;
-  color: #a6a6a6;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 1px black;
+
+
+a, button {
+  width: 6rem;
+  @media @tui-desktop-min {
+    width: 10em;
+  }
 }
-tui-avatar{
-  float: right;
-}
-.button{
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-}
+
+
+
+
+
+
 
 
 

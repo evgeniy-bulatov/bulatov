@@ -1,14 +1,74 @@
-<figure>
-  <div class="button">
-      <!--КНОПКА-->
-      <a tuiButton
-        type="button"
-        routerLink="/home1"
-        appearance="whiteblock-active"
-        icon="tuiIconPlusLarge"
-        class="tui-space_right-30">
-        Новое </a>
+<tui-root>
 
 
-  </div>
+    <!--КНОПКА-->
+<!--    <a tuiButton-->
+<!--      type="button"-->
+<!--      size="m"-->
+<!--      routerLink="/home1"-->
+<!--      appearance="primary"-->
+<!--      icon="tuiIconPlusLarge"-->
+<!--      class="tui-space_right-30">-->
+<!--      Новое </a>-->
+
+  <figure>
+  <button tuiAction
+    type="button">
+    <section>
+      <h2 class="header tui-text_h6">Название встречи</h2>
+      <h3 class="description tui-text_body-s">
+        Описание события Описание события Описание события Описание события Описание события
+      </h3>
+      <p class="description tui-text_body-s">
+        Участник Участник Участник Участник Участник
+      </p>
+    </section>
+  </button>
+
+  <button tuiAction
+    type="button">
+    <section>
+      <h3 class="header tui-text_h6">Название встречи</h3>
+      <p class="description tui-text_body-s">
+        Описание события Описание события Описание события Описание события Описание события
+      </p>
+      <p class="description tui-text_body-s">
+        Участник Участник Участник Участник Участник
+      </p>
+    </section>
+  </button>
+
+  <button tuiAction
+    type="button">
+    <section>
+      <h3 class="header tui-text_h6">Название встречи</h3>
+      <p class="description tui-text_body-s">
+        Описание события Описание события Описание события Описание события Описание события
+      </p>
+      <p class="description tui-text_body-s">
+        Участник Участник Участник Участник Участник
+      </p>
+    </section>
+  </button>
+
 </figure>
+
+
+<!--  <div *tuiRepeatTimes="let index of content">-->
+<!--    <button-->
+<!--      tuiButton-->
+<!--      size="s"-->
+<!--      appearance="icon"-->
+<!--      icon="tuiIconPlusLarge"-->
+<!--      (click)="add()">-->
+<!--    </button>-->
+<!--    <button-->
+<!--      tuiButton-->
+<!--      size="s"-->
+<!--      appearance="icon"-->
+<!--      icon="tuiIconTrash"-->
+<!--      (click)="remove()">-->
+<!--    </button>-->
+<!--  </div>-->
+</tui-root>
+

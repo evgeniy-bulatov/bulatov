@@ -3,47 +3,56 @@
 
 <form>
 <tui-input [formControl]="control">
-  Account
+  Логин
   <tui-data-list-wrapper
     *tuiDataList
     [items]="items | tuiFilterByInputWith : stringify"
     [itemContent]="stringify | tuiStringifyContent">
   </tui-data-list-wrapper>
 </tui-input>
-</form>
 
-<form
-  class="b-form"
-  [formGroup]="testForm">
   <tui-input-password
     formControlName="testValue"
     class="tui-space_top-2">
-    Type a password
+    Пароль
     <input
       tuiTextfield
-      placeholder="Make it secure!"/>
+      placeholder="Ваш пароль"/>
   </tui-input-password>
 </form>
 
 <br>
 
-<div class="button">
+  <a tuiButton
+     type="button"
+     size="xs"
+     routerLink="/create"
+     appearance="icon"
+     class="">
+     Забыли пароль? </a>
 
-<button
-  tuiButton
-  type="button"
-  appearance="whiteblock-active"
-  class="tui-space_right-2">
-  Вход
-</button>
+<br><br>
+
+<div class="button">
+<a tuiButton
+   type="button"
+   size="m"
+   routerLink="/create"
+   appearance="primary"
+   class="tui-space_right-2">
+   Регистрация
+</a>
 
 <a tuiButton
   type="button"
-  routerLink="/create"
-   appearance="whiteblock-active"
-   class="tui-space_left-2">
-  Регистрация
+   size="m"
+   routerLink="/home"
+  appearance="primary"
+  class="tui-space_left-2">
+  Вход
 </a>
+
+
 
 </div>
 

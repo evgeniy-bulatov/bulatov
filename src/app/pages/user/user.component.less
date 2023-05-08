@@ -1,14 +1,24 @@
-.field-large {
-  min-height: 2.75rem;
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
+
+a{
+  width: 35%;
+  @media @tui-desktop-min {
+    width: 8rem;
+  }
 }
-.success {
-  position: relative;
-  color: var(--tui-success-fill);
-}
+
 figure {
   display: inline-block;
   position: absolute;
   text-align: center;
   left: 0;
   right: 0;
+
+}
+form{
+  width: 100%;
+  @media @tui-desktop-min {
+    width: 500px;
+    margin: auto;
+  }
 }

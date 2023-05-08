@@ -4,27 +4,35 @@ import { CommonModule } from '@angular/common';
 import { CreateRoutingModule } from './create-routing.module';
 import { CreateComponent } from './create.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {TuiDataListWrapperModule, TuiInputModule, TuiInputPhoneModule, TuiSelectModule} from "@taiga-ui/kit";
+import {
+    TuiDataListWrapperModule,
+    TuiInputModule,
+    TuiInputPasswordModule,
+    TuiInputPhoneModule,
+    TuiSelectModule
+} from "@taiga-ui/kit";
 import {TuiValidatorModule} from "@taiga-ui/cdk";
-import {TuiButtonModule, TuiRootModule} from "@taiga-ui/core";
+import {TuiButtonModule, TuiRootModule, TuiTextfieldControllerModule} from "@taiga-ui/core";
 
 
 @NgModule({
   declarations: [
     CreateComponent
   ],
-    imports: [
-        CommonModule,
-        CreateRoutingModule,
-        ReactiveFormsModule,
-        TuiInputModule,
-        TuiDataListWrapperModule,
-        TuiInputPhoneModule,
-        TuiSelectModule,
-        FormsModule,
-        TuiValidatorModule,
-        TuiRootModule,
-        TuiButtonModule
-    ]
+  imports: [
+    CommonModule,
+    CreateRoutingModule,
+    ReactiveFormsModule,
+    TuiInputModule,
+    TuiDataListWrapperModule,
+    TuiInputPhoneModule,
+    TuiSelectModule,
+    FormsModule,
+    TuiValidatorModule,
+    TuiRootModule,
+    TuiButtonModule,
+    TuiInputPasswordModule,
+    TuiTextfieldControllerModule
+  ]
 })
 export class CreateModule { }

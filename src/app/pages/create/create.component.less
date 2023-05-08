@@ -1,6 +1,4 @@
-.button{
-
-}
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
 
 figure {
   display: inline-block;
@@ -12,4 +10,20 @@ figure {
 .button{
   display: flex;
   justify-content: center;
+}
+
+form{
+  width: 100%;
+  @media @tui-desktop-min {
+    width: 500px;
+    margin: auto;
+
+  }
+}
+
+a{
+  width: 35%;
+  @media @tui-desktop-min {
+    width: 8rem;
+  }
 }

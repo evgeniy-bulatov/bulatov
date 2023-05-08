@@ -1,46 +1,34 @@
 @import '@taiga-ui/core/styles/taiga-ui-local.less';
-
-figure{
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  left: 0;
-  right: 0;
-}
-
-.button{
-  display: flex;
-  justify-content: center;
-}
-
-//содержимое окон
-//.item {
-//  height: 100px;
-//  background: var(--tui-neutral-bg);
-//  color: var(--tui-text-01);
+//
+//figure{
 //  display: flex;
 //  justify-content: center;
-//  align-items: center;
-//}
-
-
-
-
-//img{
-//  width: 50%;
-//  height: 40%;
-//}
-//a{
-//  width: 95%;
-//}
-//figure{
-//  display: inline-block;
-//  position: absolute;
 //  text-align: center;
 //  left: 0;
 //  right: 0;
 //}
-//.button{
-//  display: flex;
-//  justify-content: center;
-//}
+a{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+figure {
+  display: grid;
+  width: 80%;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  @media @tui-desktop-min {
+    width: 800px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media @tui-mobile{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}

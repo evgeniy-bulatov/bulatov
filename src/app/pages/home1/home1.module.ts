@@ -11,11 +11,11 @@ import {
 import { Home1RoutingModule } from './home1-routing.module';
 import { Home1Component } from './home1.component';
 import {
-  TuiButtonModule,
-  TuiGroupModule,
-  TuiHintModule, TuiLinkModule, TuiRootModule,
-  TuiSvgModule,
-  TuiTextfieldControllerModule
+    TuiButtonModule,
+    TuiGroupModule,
+    TuiHintModule, TuiHostedDropdownModule, TuiLinkModule, TuiRootModule,
+    TuiSvgModule,
+    TuiTextfieldControllerModule
 } from "@taiga-ui/core";
 
 
@@ -23,24 +23,25 @@ import {
   declarations: [
     Home1Component
   ],
-  imports: [
-    CommonModule,
-    Home1RoutingModule,
-    TuiButtonModule,
-    ReactiveFormsModule,
-    TuiInputModule,
-    TuiTextfieldControllerModule,
-    TuiHintModule,
-    TuiSvgModule,
-    TuiRadioBlockModule,
-    TuiGroupModule,
-    TuiTextAreaModule,
-    TuiIslandModule,
-    TuiCheckboxLabeledModule,
-    FormsModule,
-    TuiElasticContainerModule,
-    TuiRootModule,
-    TuiLinkModule,
-  ]
+    imports: [
+        CommonModule,
+        Home1RoutingModule,
+        TuiButtonModule,
+        ReactiveFormsModule,
+        TuiInputModule,
+        TuiTextfieldControllerModule,
+        TuiHintModule,
+        TuiSvgModule,
+        TuiRadioBlockModule,
+        TuiGroupModule,
+        TuiTextAreaModule,
+        TuiIslandModule,
+        TuiCheckboxLabeledModule,
+        FormsModule,
+        TuiElasticContainerModule,
+        TuiRootModule,
+        TuiLinkModule,
+        TuiHostedDropdownModule,
+    ]
 })
 export class Home1Module { }

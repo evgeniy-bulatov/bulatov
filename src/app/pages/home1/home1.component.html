@@ -1,28 +1,6 @@
 <tui-root>
 
 <figure>
-  <div class="button">
-  <!--КНОПКА-->
-  <a tuiButton
-     type="button"
-     routerLink="/home"
-     appearance="whiteblock-active"
-     icon="tuiIconArrowLeftLarge"
-     class="tui-space_right-3">
-    Назад </a>
-
-  <!--КНОПКА-->
-  <a tuiButton
-     type="button"
-     routerLink="/home2"
-     appearance="whiteblock-active"
-     iconRight="tuiIconArrowRightLarge"
-     class="tui-space_left-3">
-    Далее </a>
-  </div>
-<br>
-
-
 <!--НАЗВАНИЕ-->
   <div class="block">
     <tui-input
@@ -39,9 +17,7 @@
         class="success tui-space_left-3">
       </tui-svg>
     </ng-template>
-
 <br>
-
 <!--ZOOM SKYPE AUDIO-->
     <form
       class="group"
@@ -62,14 +38,14 @@
           formControlName="testValue"
           item="apple"
           size="s">
-          Skype
+          Встреча
         </tui-radio-block>
         <tui-radio-block
           contentAlign="right"
           formControlName="testValue"
           item="pineapple"
           size="s">
-          WhatsApp
+          Телефон
         </tui-radio-block>
       </div>
     </form>
@@ -90,6 +66,34 @@
       [tuiTextfieldCleaner]="true">
       Ссылка
     </tui-input>
+  </div>
+
+
+
+
+
+
+  <br>
+  <div class="button">
+    <!--КНОПКА-->
+    <a tuiButton
+       type="button"
+       size="m"
+       routerLink="/home"
+       appearance="primary"
+       icon="tuiIconArrowLeftLarge"
+       class="tui-space_right-3">
+      Назад </a>
+
+    <!--КНОПКА-->
+    <a tuiButton
+       type="button"
+       size="m"
+       routerLink="/home2"
+       appearance="primary"
+       iconRight="tuiIconArrowRightLarge"
+       class="tui-space_left-3">
+      Далее </a>
   </div>
 </figure>
 
