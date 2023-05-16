@@ -1,60 +1,80 @@
 <tui-root>
 <figure>
 
-<form>
-<tui-input [formControl]="control">
-  Логин
-  <tui-data-list-wrapper
-    *tuiDataList
-    [items]="items | tuiFilterByInputWith : stringify"
-    [itemContent]="stringify | tuiStringifyContent">
-  </tui-data-list-wrapper>
-</tui-input>
+  <form class="input">
+    <tui-input [formControl]="control">
+      Логин
+      <tui-data-list-wrapper
+        *tuiDataList
+        [items]="items | tuiFilterByInputWith : stringify"
+        [itemContent]="stringify | tuiStringifyContent">
+      </tui-data-list-wrapper>
+    </tui-input>
 
-  <tui-input-password
-    formControlName="testValue"
-    class="tui-space_top-2">
-    Пароль
-    <input
-      tuiTextfield
-      placeholder="Ваш пароль"/>
-  </tui-input-password>
-</form>
-
+    <tui-input-password
+        formControlName="testValue"
+        class="tui-space_top-2">
+        Пароль
+        <input
+          tuiTextfield
+          placeholder="Ваш пароль"/>
+    </tui-input-password>
+  </form>
 <br>
+  <button tuiButton
+    type="button"
+    appearance="icon"
+    size="m"
+    (click)="showDialog()">
+    Забыли пароль
+  </button>
+  <ng-template
+    let-observer
+    [tuiDialogOptions]="$any({label: '', size: 's'})"
+    [(tuiDialog)]="open">
+    <form [formGroup]="exampleForm"
+      (ngSubmit)="observer.complete()">
+      <h2>Введите email</h2>
+      <p>Для вас будет создан новый пароль</p>
+      <tui-input
+        tuiAutoFocus
+        formControlName="exampleControl">
 
-  <a tuiButton
-     type="button"
-     size="xs"
-     routerLink="/create"
-     appearance="icon"
-     class="">
-     Забыли пароль? </a>
-
-<br><br>
-
-<div class="button">
-<a tuiButton
-   type="button"
-   size="m"
-   routerLink="/create"
-   appearance="primary"
-   class="tui-space_right-2">
-   Регистрация
-</a>
-
-<a tuiButton
-  type="button"
-   size="m"
-   routerLink="/home"
-  appearance="primary"
-  class="tui-space_left-2">
-  Вход
-</a>
+      </tui-input>
+      <p>
+        <button
+          tuiButton
+          type="submit"
+          size="m"
+          (click)="showNotification()">
+          Отправить
+        </button>
+      </p>
+    </form>
+  </ng-template>
 
 
+  <br><br>
 
-</div>
+  <div class="button">
+    <a tuiButton
+       type="button"
+       size="m"
+       routerLink="/create"
+       appearance="primary"
+       class="tui-space_right-2">
+       Регистрация
+    </a>
+
+    <a tuiButton
+      type="button"
+       size="m"
+       routerLink="/home"
+      appearance="primary"
+      class="tui-space_left-2">
+      Вход
+    </a>
+  </div>
 
 </figure>
 </tui-root>

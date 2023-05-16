@@ -30,28 +30,32 @@
         Введите ваш email
       </tui-input>
       <ng-template #phone>
-        <tui-input-phone formControlName="contact">
-        Введите номер телефона</tui-input-phone>
+      <tui-input-phone-international formControlName="contact"
+        class="input"
+        [countries]="countries"
+        [(countryIsoCode)]="countryIsoCode">
+        Введите номер телефона
+        </tui-input-phone-international>
       </ng-template>
 
       <tui-input-password
         formControlName="testValue"
         class="tui-space_top-2">
         Пароль
-        <input tuiTextfield
-        placeholder="Make it secure!"/>
       </tui-input-password>
 
       <tui-input-password
         formControlName="testValue"
         class="tui-space_top-2">
         Повторите пароль
-        <input tuiTextfield
-        placeholder="Make it secure!"/>
       </tui-input-password>
     </form>
 
     <br>
+
+
+
+
 
 <!--КНОПКИ-->
 

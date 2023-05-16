@@ -1,43 +1,35 @@
 <tui-root>
+ <figure>
+   <form class="group"
+     [formGroup]="testForm">
+     <div tuiGroup
+       class="group"
+       [collapsed]="true">
 
-  <div class="wrapper">
-    <tui-notification>
-      A short simple informative message. It can be&nbsp;multiline&nbsp;if&nbsp;you&nbsp;need it
-    </tui-notification>
-    <tui-notification
-      status="success"
-      class="tui-space_top-4"
-    >
-      A short simple informative message. It can be&nbsp;multiline&nbsp;if&nbsp;you&nbsp;need it
-    </tui-notification>
-    <tui-notification
-      status="error"
-      class="tui-space_top-4"
-    >
-      A short simple informative message. It can be&nbsp;multiline&nbsp;if&nbsp;you&nbsp;need it
-    </tui-notification>
-    <tui-notification
-      status="warning"
-      class="tui-space_top-4"
-    >
-      A short simple informative message. It can be&nbsp;multiline&nbsp;if&nbsp;you&nbsp;need it
-    </tui-notification>
+       <tui-radio-block
+         *ngFor="let day of days"
+         formControlName="testValue"
+         contentAlign="right"
+         size="l"
+         [item]="day"
+         [hideRadio]="true">
+         {{ day }}
+       </tui-radio-block>
+
+     </div>
+   </form>
+
+   <div class="block">
+      <tui-calendar
+        [value]="value"
+        (dayClick)="onDayClick($event)">
+      </tui-calendar>
+      <div *ngIf="value">Chosen date: {{ value }}</div>
   </div>
 
 
-  <button tuiAction
-    type="button">
-    <section>
-      <h3 class="header tui-text_h6">Название встречи</h3>
-      <p class="description tui-text_body-s">
-        Описание события Описание события Описание события Описание события Описание события
-      </p>
-      <p class="description tui-text_body-s">
-        Участник Участник Участник Участник Участник
-      </p>
-    </section>
-  </button>
 
 
+ </figure>
 </tui-root>
 

@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import {
-    TuiButtonModule,
+    TuiButtonModule, TuiDialogModule,
     TuiHintModule,
     TuiRootModule,
     TuiSvgModule,
@@ -38,7 +38,8 @@ import {
         TuiDataListWrapperModule,
         TuiFilterByInputPipeModule,
         TuiStringifyContentPipeModule,
-        TuiRootModule
+        TuiRootModule,
+        TuiDialogModule
     ]
 })
 export class UserModule { }

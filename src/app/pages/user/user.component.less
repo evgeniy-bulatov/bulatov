@@ -1,5 +1,11 @@
 @import '@taiga-ui/core/styles/taiga-ui-local.less';
 
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
 a{
   width: 35%;
   @media @tui-desktop-min {
@@ -15,10 +21,18 @@ figure {
   right: 0;
 
 }
-form{
+.input{
   width: 100%;
   @media @tui-desktop-min {
     width: 500px;
     margin: auto;
   }
+}
+p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  text-align: center;
 }

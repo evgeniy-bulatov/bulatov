@@ -40,7 +40,10 @@ export class Home2Component {
     '30 минут',
   ];
 
-
   testValue = new FormControl();
-}
 
+  testForm = new FormGroup({
+    testValue1: new FormControl(false),
+    testValue2: new FormControl(false),
+  });
+}

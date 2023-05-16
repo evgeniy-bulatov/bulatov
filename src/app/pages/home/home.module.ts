@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {TuiTableModule} from '@taiga-ui/addon-table';
-import {TuiActionModule} from '@taiga-ui/kit';
+import {TuiActionModule, TuiRadioBlockModule} from '@taiga-ui/kit';
 
 
 import { HomeRoutingModule } from './home-routing.module';
@@ -13,7 +13,7 @@ import {
     TuiMarkerIconModule,
     TuiTagModule
 } from "@taiga-ui/kit";
-import {TuiButtonModule, TuiNotificationModule, TuiRootModule} from "@taiga-ui/core";
+import {TuiButtonModule, TuiCalendarModule, TuiGroupModule, TuiNotificationModule, TuiRootModule} from "@taiga-ui/core";
 import {ReactiveFormsModule} from "@angular/forms";
 
 
@@ -21,20 +21,23 @@ import {ReactiveFormsModule} from "@angular/forms";
   declarations: [
     HomeComponent
   ],
-    imports: [
-        TuiActionModule,
-        TuiTableModule,
-        CommonModule,
-        HomeRoutingModule,
-        TuiCalendarRangeModule,
-        TuiIslandModule,
-        TuiRootModule,
-        TuiNotificationModule,
-        TuiTagModule,
-        TuiButtonModule,
-        TuiInputFilesModule,
-        ReactiveFormsModule,
-        TuiMarkerIconModule
-    ]
+  imports: [
+    TuiActionModule,
+    TuiTableModule,
+    CommonModule,
+    HomeRoutingModule,
+    TuiCalendarRangeModule,
+    TuiIslandModule,
+    TuiRootModule,
+    TuiNotificationModule,
+    TuiTagModule,
+    TuiButtonModule,
+    TuiInputFilesModule,
+    ReactiveFormsModule,
+    TuiMarkerIconModule,
+    TuiCalendarModule,
+    TuiGroupModule,
+    TuiRadioBlockModule
+  ]
 })
 export class HomeModule { }

@@ -17,6 +17,7 @@ import {
     TuiSvgModule,
     TuiTextfieldControllerModule
 } from "@taiga-ui/core";
+import {TuiPaletteModule} from "@taiga-ui/addon-editor";
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {
         TuiRootModule,
         TuiLinkModule,
         TuiHostedDropdownModule,
+        TuiPaletteModule,
     ]
 })
 export class Home1Module { }

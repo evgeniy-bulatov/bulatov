@@ -1,4 +1,5 @@
 import { NgDompurifySanitizer } from "@tinkoff/ng-dompurify";
+import {TuiThemeNightModule, TuiModeModule} from '@taiga-ui/core';
 import {
   TuiRootModule,
   TuiDialogModule,
@@ -23,6 +24,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     AppComponent
   ],
   imports: [
+    TuiThemeNightModule,
+    TuiModeModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

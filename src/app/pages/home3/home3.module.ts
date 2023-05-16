@@ -12,39 +12,43 @@ import {
 } from "@taiga-ui/kit";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {
-    TuiButtonModule,
-    TuiExpandModule,
-    TuiGroupModule,
-    TuiRootModule,
-    TuiTextfieldControllerModule, TuiTooltipModule
+  TuiButtonModule,
+  TuiExpandModule,
+  TuiGroupModule, TuiHostedDropdownModule,
+  TuiRootModule,
+  TuiTextfieldControllerModule, TuiTooltipModule
 } from "@taiga-ui/core";
 import {TuiRepeatTimesModule} from "@taiga-ui/cdk";
+import {TuiInputColorModule, TuiPaletteModule} from "@taiga-ui/addon-editor";
 
 
 @NgModule({
   declarations: [
     Home3Component
   ],
-    imports: [
-        CommonModule,
-        Home3RoutingModule,
-        TuiCheckboxBlockModule,
-        ReactiveFormsModule,
-        TuiGroupModule,
-        TuiButtonModule,
-        TuiSelectModule,
-        TuiDataListWrapperModule,
-        TuiRootModule,
-        TuiInputTimeModule,
-        TuiTextfieldControllerModule,
-        TuiCheckboxModule,
-        TuiElasticContainerModule,
-        TuiExpandModule,
-        TuiInputModule,
-        FormsModule,
-        TuiRepeatTimesModule,
-        TuiTooltipModule,
-        TuiCheckboxLabeledModule
-    ]
+  imports: [
+    CommonModule,
+    Home3RoutingModule,
+    TuiCheckboxBlockModule,
+    ReactiveFormsModule,
+    TuiGroupModule,
+    TuiButtonModule,
+    TuiSelectModule,
+    TuiDataListWrapperModule,
+    TuiRootModule,
+    TuiInputTimeModule,
+    TuiTextfieldControllerModule,
+    TuiCheckboxModule,
+    TuiElasticContainerModule,
+    TuiExpandModule,
+    TuiInputModule,
+    FormsModule,
+    TuiRepeatTimesModule,
+    TuiTooltipModule,
+    TuiCheckboxLabeledModule,
+    TuiInputColorModule,
+    TuiHostedDropdownModule,
+    TuiPaletteModule
+  ]
 })
 export class Home3Module { }

@@ -1,6 +1,7 @@
 import {ChangeDetectionStrategy, Component, Inject} from '@angular/core';
 import {TuiAlertService} from '@taiga-ui/core';
-
+import {TuiDay} from "@taiga-ui/cdk";
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -10,21 +11,23 @@ import {TuiAlertService} from '@taiga-ui/core';
 })
 
 export class HomeComponent {
-
-
   constructor(
     @Inject(TuiAlertService)
     private readonly alerts: TuiAlertService,
   ) {}
 
-  onClick(result: string): void {
-    this.alerts.open(result).subscribe();
+
+  value: TuiDay | null = null;
+
+  onDayClick(day: TuiDay): void {
+    this.value = day;
   }
+
+  readonly testForm = new FormGroup({
+    testValue: new FormControl('Предстоящие'),
+  });
+  readonly days = ['Прошедшие', 'Предстоящие', 'Отменённые'];
 }
-
-
-
-
 
 
 

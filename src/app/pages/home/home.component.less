@@ -1,34 +1,10 @@
 @import '@taiga-ui/core/styles/taiga-ui-local.less';
-//
-//figure{
-//  display: flex;
-//  justify-content: center;
-//  text-align: center;
-//  left: 0;
-//  right: 0;
-//}
-a{
-  margin-right: auto;
-  margin-left: auto;
+
+figure{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
 
-figure {
-  display: grid;
-  width: 80%;
-  gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  margin: auto;
-  @media @tui-desktop-min {
-    width: 800px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  @media @tui-mobile{
-    grid-template-columns: repeat(1, 1fr);
-  }
-  button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-}

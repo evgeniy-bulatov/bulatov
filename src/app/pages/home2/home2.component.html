@@ -36,6 +36,30 @@
       </tui-data-list-wrapper>
     </tui-select>
   </form>
+
+  <h3 class="title">Уведомления о бронировании</h3>
+  <form
+    class="group"
+    [formGroup]="testForm">
+    <div
+      tuiGroup
+      class="group"
+      [collapsed]="true">
+      <tui-checkbox-block
+        contentAlign="right"
+        formControlName="testValue1"
+        size="s">
+        За 1 сутки
+      </tui-checkbox-block>
+
+      <tui-checkbox-block
+        contentAlign="right"
+        formControlName="testValue2"
+        size="s">
+        За 1 час
+      </tui-checkbox-block>
+    </div>
+  </form>
 </div>
 
   <br>
