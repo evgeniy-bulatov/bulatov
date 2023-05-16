@@ -1,90 +1,91 @@
 <tui-root>
-<figure>
-<div class="block">
-  <form class="b-form">
-    <tui-select [formControl]="itemControl">
-      Длительность встречи
-      <input tuiTextfield
-        placeholder="Сколько времени будет длиться встреча"/>
-      <tui-data-list-wrapper
-        *tuiDataList
-        [items]="items">
-      </tui-data-list-wrapper>
-    </tui-select>
-  </form>
-<br>
-  <form class="b-form">
-    <tui-select [formControl]="itemBeforeControl">
-      Добавить время перед встречей
-      <input tuiTextfield
-        placeholder="Время для подготовки/отдыха"/>
-      <tui-data-list-wrapper
-        *tuiDataList
-        [items]="beforeItems">
-      </tui-data-list-wrapper>
-    </tui-select>
-  </form>
-<br>
-  <form class="b-form">
-    <tui-select [formControl]="itemAfterControl">
-      Добавить время после встречи
-      <input tuiTextfield
-        placeholder="Время для подготовки/отдыха"/>
-      <tui-data-list-wrapper
-        *tuiDataList
-        [items]="afterItems">
-      </tui-data-list-wrapper>
-    </tui-select>
-  </form>
+  <figure>
+    <div class="block">
+      <form class="b-form">
+        <tui-select [formControl]="itemControl">
+          Длительность встречи
+          <input tuiTextfield
+                 placeholder="Сколько времени будет длиться встреча"/>
+          <tui-data-list-wrapper
+            *tuiDataList
+            [items]="items">
+          </tui-data-list-wrapper>
+        </tui-select>
+      </form>
+      <br>
+      <form class="b-form">
+        <tui-select [formControl]="itemBeforeControl">
+          Добавить время перед встречей
+          <input tuiTextfield
+                 placeholder="Время для подготовки/отдыха"/>
+          <tui-data-list-wrapper
+            *tuiDataList
+            [items]="beforeItems">
+          </tui-data-list-wrapper>
+        </tui-select>
+      </form>
+      <br>
+      <form class="b-form">
+        <tui-select [formControl]="itemAfterControl">
+          Добавить время после встречи
+          <input tuiTextfield
+                 placeholder="Время для подготовки/отдыха"/>
+          <tui-data-list-wrapper
+            *tuiDataList
+            [items]="afterItems">
+          </tui-data-list-wrapper>
+        </tui-select>
+      </form>
 
-  <h3 class="title">Уведомления о бронировании</h3>
-  <form
-    class="group"
-    [formGroup]="testForm">
-    <div
-      tuiGroup
-      class="group"
-      [collapsed]="true">
-      <tui-checkbox-block
-        contentAlign="right"
-        formControlName="testValue1"
-        size="s">
-        За 1 сутки
-      </tui-checkbox-block>
+      <h3 class="title">Уведомления о бронировании</h3>
+      <form
+        class="group"
+        [formGroup]="testForm">
+        <div
+          tuiGroup
+          class="group"
+          [collapsed]="true">
+          <tui-checkbox-block
+            contentAlign="right"
+            formControlName="testValue1"
+            size="s"
+            [hideCheckbox]="true">
+            За 1 сутки
+          </tui-checkbox-block>
 
-      <tui-checkbox-block
-        contentAlign="right"
-        formControlName="testValue2"
-        size="s">
-        За 1 час
-      </tui-checkbox-block>
+          <tui-checkbox-block
+            contentAlign="right"
+            formControlName="testValue2"
+            size="s"
+            [hideCheckbox]="true">
+            За 1 час
+          </tui-checkbox-block>
+        </div>
+      </form>
     </div>
-  </form>
-</div>
 
-  <br>
+    <br>
 
-  <div class="button">
-    <!--КНОПКА ДАЛЕЕ-->
-    <a tuiButton
-       type="button"
-       size="m"
-       routerLink="/home1"
-       appearance="primary"
-       icon="tuiIconArrowLeftLarge"
-       class="tui-space_right-3">
-      Назад </a>
+    <div class="button">
+      <!--КНОПКА ДАЛЕЕ-->
+      <a tuiButton
+         type="button"
+         size="m"
+         routerLink="/home1"
+         appearance="primary"
+         icon="tuiIconArrowLeftLarge"
+         class="tui-space_right-3">
+        Назад </a>
 
-    <!--КНОПКА НАЗАД-->
-    <a tuiButton
-       type="button"
-       size="m"
-       routerLink="/home3"
-       appearance="primary"
-       iconRight="tuiIconArrowRightLarge"
-       class="tui-space_left-3">
-      Далее </a>
-  </div>
-
-</figure>
+      <!--КНОПКА НАЗАД-->
+      <a tuiButton
+         type="button"
+         size="m"
+         routerLink="/home3"
+         appearance="primary"
+         iconRight="tuiIconArrowRightLarge"
+         class="tui-space_left-3">
+        Далее </a>
+    </div>
+  </figure>
 </tui-root>

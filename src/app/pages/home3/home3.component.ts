@@ -20,13 +20,15 @@ import {BehaviorSubject} from 'rxjs';
 })
 export class Home3Component {
   testForm = new FormGroup({
-    testValue1: new FormControl(false),
-    testValue2: new FormControl(false),
-    testValue3: new FormControl(false),
+    testValue1: new FormControl({value: false, disabled: true}),
+    testValue2: new FormControl({value: false, disabled: true}),
+    testValue3: new FormControl({value: false, disabled: true}),
     testValue4: new FormControl({value: false, disabled: true}),
-    testValue5: new FormControl(false),
-    testValue6: new FormControl(false),
-    testValue7: new FormControl(false),
+    testValue5: new FormControl({value: false, disabled: true}),
+    testValue6: new FormControl({value: false, disabled: true}),
+    testValue7: new FormControl({value: false, disabled: true}),
+
+
 
   });
   readonly test1Form = new FormGroup({

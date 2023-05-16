@@ -1,251 +1,238 @@
 <tui-root>
   <figure>
-    <div class="form">
-      <form [formGroup]="testForm">
-        <tui-checkbox-block
-          formControlName="testValue1"
-          contentAlign="left"
-          class="tui-space_right-3"
-          size="l">
-          Понедельник
-        </tui-checkbox-block>
-      </form>
 
+    <form class="b-form"
+          [formGroup]="testForm">
+      <tui-checkbox-block
+        formControlName="testValue1"
+        contentAlign="left"
+        class="tui-space_right-3"
+        size="l">Понедельник
+      </tui-checkbox-block>
 
-      <form class="b-form"
-            [formGroup]="test1Form">
-        <tui-input-time
-          formControlName="testValue1"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-        <tui-input-time
-          formControlName="testValue2"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-      </form>
+      <tui-input-time
+        formControlName="testValue1"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
 
-    </div>
+      <tui-input-time
+        formControlName="testValue1"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+    </form>
 
     <br>
 
-    <div class="form">
-      <form [formGroup]="testForm">
-        <tui-checkbox-block
-          formControlName="testValue2"
-          contentAlign="left"
-          class="tui-space_right-3"
-          size="l">
-          Вторник
-        </tui-checkbox-block>
-      </form>
-      <form class="b-form"
-            [formGroup]="test1Form">
-        <tui-input-time
-          formControlName="testValue1"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-        <tui-input-time
-          formControlName="testValue2"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-      </form>
+    <form class="b-form"
+          [formGroup]="testForm">
+      <tui-checkbox-block
+        formControlName="testValue2"
+        contentAlign="left"
+        class="tui-space_right-3"
+        size="l">
+        Вторник
+      </tui-checkbox-block>
 
-    </div>
+      <tui-input-time
+        formControlName="testValue1"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+      <tui-input-time
+        formControlName="testValue2"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+    </form>
+
 
     <br>
 
-    <div class="form">
-      <form [formGroup]="testForm">
-        <tui-checkbox-block
-          formControlName="testValue3"
-          contentAlign="left"
-          class="tui-space_right-3"
-          size="l">
-          Среда
-        </tui-checkbox-block>
-      </form>
-      <form class="b-form"
-            [formGroup]="test1Form">
-        <tui-input-time
-          formControlName="testValue1"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-        <tui-input-time
-          formControlName="testValue2"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-      </form>
-    </div>
+
+    <form class="b-form"
+          [formGroup]="testForm">
+      <tui-checkbox-block
+        formControlName="testValue3"
+        contentAlign="left"
+        class="tui-space_right-3"
+        size="l">
+        Среда
+      </tui-checkbox-block>
+
+      <tui-input-time
+        formControlName="testValue1"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+      <tui-input-time
+        formControlName="testValue2"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+    </form>
+
 
     <br>
 
-    <div class="form">
-      <form [formGroup]="testForm">
-        <tui-checkbox-block
-          formControlName="testValue4"
-          contentAlign="left"
-          class="tui-space_right-3"
-          size="l">
-          Четверг
-        </tui-checkbox-block>
-      </form>
-      <form class="b-form"
-            [formGroup]="test1Form">
-        <tui-input-time
-          formControlName="testValue1"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-        <tui-input-time
-          formControlName="testValue2"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-      </form>
-    </div>
+
+    <form class="b-form"
+          [formGroup]="testForm">
+      <tui-checkbox-block
+        formControlName="testValue4"
+        contentAlign="left"
+        class="tui-space_right-3"
+        size="l">
+        Четверг
+      </tui-checkbox-block>
+
+      <tui-input-time
+        formControlName="testValue1"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+      <tui-input-time
+        formControlName="testValue2"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+    </form>
+
 
     <br>
 
-    <div class="form">
-      <form [formGroup]="testForm">
-        <tui-checkbox-block
-          formControlName="testValue5"
-          contentAlign="left"
-          class="tui-space_right-3"
-          size="l">
-          Пятница
-        </tui-checkbox-block>
-      </form>
-      <form class="b-form"
-            [formGroup]="test1Form">
-        <tui-input-time
-          formControlName="testValue1"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-        <tui-input-time
-          formControlName="testValue2"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-      </form>
-    </div>
+
+    <form class="b-form"
+          [formGroup]="testForm">
+      <tui-checkbox-block
+        formControlName="testValue5"
+        contentAlign="left"
+        class="tui-space_right-3"
+        size="l">
+        Пятница
+      </tui-checkbox-block>
+
+      <tui-input-time
+        formControlName="testValue1"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+      <tui-input-time
+        formControlName="testValue2"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+    </form>
+
 
     <br>
 
-    <div class="form">
-      <form [formGroup]="testForm">
-        <tui-checkbox-block
-          formControlName="testValue6"
-          contentAlign="left"
-          class="tui-space_right-3"
-          size="l">
-          Суббота
-        </tui-checkbox-block>
-      </form>
-      <form class="b-form"
-            [formGroup]="test1Form">
-        <tui-input-time
-          formControlName="testValue1"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-        <tui-input-time
-          formControlName="testValue2"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-      </form>
-    </div>
+
+    <form class="b-form"
+          [formGroup]="testForm">
+      <tui-checkbox-block
+        formControlName="testValue6"
+        contentAlign="left"
+        class="tui-space_right-3"
+        size="l">
+        Суббота
+      </tui-checkbox-block>
+
+      <tui-input-time
+        formControlName="testValue1"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+      <tui-input-time
+        formControlName="testValue2"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+    </form>
+
 
     <br>
 
-    <div class="form">
-      <form [formGroup]="testForm">
-        <tui-checkbox-block
-          formControlName="testValue7"
-          contentAlign="left"
-          class="tui-space_right-3"
-          size="l">
-          Воскресенье
-        </tui-checkbox-block>
-      </form>
-      <form class="b-form"
-            [formGroup]="test1Form">
-        <tui-input-time
-          formControlName="testValue1"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-        <tui-input-time
-          formControlName="testValue2"
-          tuiTextfieldSize="l"
-          class="tui-space_right-3"
-          [tuiTextfieldLabelOutside]="true"
-          [tuiTextfieldCleaner]="true"
-          [items]="items">
-          Выбрать время
-        </tui-input-time>
-      </form>
-    </div>
+
+    <form class="b-form"
+          [formGroup]="testForm">
+      <tui-checkbox-block
+        formControlName="testValue7"
+        contentAlign="left"
+        class="tui-space_right-3"
+        size="l">
+        Воскресенье
+      </tui-checkbox-block>
+
+      <tui-input-time
+        formControlName="testValue1"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+      <tui-input-time
+        formControlName="testValue2"
+        tuiTextfieldSize="l"
+        class="tui-space_right-3"
+        [tuiTextfieldLabelOutside]="true"
+        [tuiTextfieldCleaner]="true"
+        [items]="items">
+        Выбрать время
+      </tui-input-time>
+    </form>
+
 
     <br>
 
