@@ -7,8 +7,10 @@
         formControlName="testValue1"
         contentAlign="left"
         class="tui-space_right-3"
+        [hideCheckbox]="true"
         size="l">Понедельник
       </tui-checkbox-block>
+
 
       <tui-input-time
         formControlName="testValue1"
@@ -39,12 +41,13 @@
         formControlName="testValue2"
         contentAlign="left"
         class="tui-space_right-3"
+        [hideCheckbox]="true"
         size="l">
         Вторник
       </tui-checkbox-block>
 
       <tui-input-time
-        formControlName="testValue1"
+        formControlName="testValue2"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -63,9 +66,7 @@
       </tui-input-time>
     </form>
 
-
     <br>
-
 
     <form class="b-form"
           [formGroup]="testForm">
@@ -73,12 +74,13 @@
         formControlName="testValue3"
         contentAlign="left"
         class="tui-space_right-3"
+        [hideCheckbox]="true"
         size="l">
         Среда
       </tui-checkbox-block>
 
       <tui-input-time
-        formControlName="testValue1"
+        formControlName="testValue3"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -87,7 +89,7 @@
         Выбрать время
       </tui-input-time>
       <tui-input-time
-        formControlName="testValue2"
+        formControlName="testValue3"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -97,9 +99,7 @@
       </tui-input-time>
     </form>
 
-
     <br>
-
 
     <form class="b-form"
           [formGroup]="testForm">
@@ -107,12 +107,13 @@
         formControlName="testValue4"
         contentAlign="left"
         class="tui-space_right-3"
+        [hideCheckbox]="true"
         size="l">
         Четверг
       </tui-checkbox-block>
 
       <tui-input-time
-        formControlName="testValue1"
+        formControlName="testValue4"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -121,7 +122,7 @@
         Выбрать время
       </tui-input-time>
       <tui-input-time
-        formControlName="testValue2"
+        formControlName="testValue4"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -131,9 +132,7 @@
       </tui-input-time>
     </form>
 
-
     <br>
-
 
     <form class="b-form"
           [formGroup]="testForm">
@@ -141,12 +140,13 @@
         formControlName="testValue5"
         contentAlign="left"
         class="tui-space_right-3"
+        [hideCheckbox]="true"
         size="l">
         Пятница
       </tui-checkbox-block>
 
       <tui-input-time
-        formControlName="testValue1"
+        formControlName="testValue5"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -155,7 +155,7 @@
         Выбрать время
       </tui-input-time>
       <tui-input-time
-        formControlName="testValue2"
+        formControlName="testValue5"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -165,9 +165,7 @@
       </tui-input-time>
     </form>
 
-
     <br>
-
 
     <form class="b-form"
           [formGroup]="testForm">
@@ -175,12 +173,13 @@
         formControlName="testValue6"
         contentAlign="left"
         class="tui-space_right-3"
+        [hideCheckbox]="true"
         size="l">
         Суббота
       </tui-checkbox-block>
 
       <tui-input-time
-        formControlName="testValue1"
+        formControlName="testValue6"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -189,7 +188,7 @@
         Выбрать время
       </tui-input-time>
       <tui-input-time
-        formControlName="testValue2"
+        formControlName="testValue6"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -199,9 +198,7 @@
       </tui-input-time>
     </form>
 
-
     <br>
-
 
     <form class="b-form"
           [formGroup]="testForm">
@@ -209,12 +206,13 @@
         formControlName="testValue7"
         contentAlign="left"
         class="tui-space_right-3"
+        [hideCheckbox]="true"
         size="l">
         Воскресенье
       </tui-checkbox-block>
 
       <tui-input-time
-        formControlName="testValue1"
+        formControlName="testValue7"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -223,7 +221,7 @@
         Выбрать время
       </tui-input-time>
       <tui-input-time
-        formControlName="testValue2"
+        formControlName="testValue7"
         tuiTextfieldSize="l"
         class="tui-space_right-3"
         [tuiTextfieldLabelOutside]="true"
@@ -233,9 +231,7 @@
       </tui-input-time>
     </form>
 
-
     <br>
-
     <div class="button">
       <!--КНОПКА ДАЛЕЕ-->
       <a tuiButton
